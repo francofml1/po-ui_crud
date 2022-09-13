@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  service: 'https://mv6l4rz6ik.execute-api.us-east-2.amazonaws.com/assets'
+  service: 'http://ec2-18-229-162-173.sa-east-1.compute.amazonaws.com:3333/assets'
 };
 
 /*
