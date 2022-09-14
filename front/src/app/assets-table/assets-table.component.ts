@@ -24,7 +24,7 @@ export class AssetsTableComponent implements OnInit {
   readonly fields: Array<PoPageDynamicTableField> = [
     { property: 'id', label: 'Asset ID', key: true },
     { property: 'name', label: 'Asset Name' },
-    { property: 'price', label: 'Asset Price' },
+    { property: 'price', label: 'Asset Price' , type: 'currency'},
   ]
   /*
   readonly fields: Array<PoPageDynamicTableField> = [
