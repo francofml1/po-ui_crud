@@ -1,5 +1,8 @@
 {
   "name": "back_js",
+  "author": {
+    "name": "Franco Marchiori Louzada"
+  },
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,7 +11,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
