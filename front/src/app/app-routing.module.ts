@@ -7,7 +7,8 @@ const routes: Routes = [
   {path: 'new', component: AssetsEditComponent},
   {path: 'edit/:id', component: AssetsEditComponent},
   {path: 'table', component: AssetsTableComponent},
-  {path: '', pathMatch: 'full', redirectTo: '/table'},
+  // {path: '', pathMatch: 'full', redirectTo: '/table'},
+  {path: '**', pathMatch: 'full', redirectTo: '/table'},
 
 ];
 
