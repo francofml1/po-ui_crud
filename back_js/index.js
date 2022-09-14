@@ -57,7 +57,22 @@ app.put('/assets/:id', (req, res) => {
 
     saveJSON(db_path, db);
 
-    return res.status(201).json(asset);
+    return res.status(200).json(asset);
+});
+
+app.delete('/assets/:id', (req, res) => {
+    console.log("DELETE '/assets/:id'");
+    const { id } = req.params;
+
+    console.log('id:', id);
+    console.log('before: ', db.items)
+    
+    db.items = db.items.filter(asset => asset.id != id);
+    console.log('after: ', db.items)
+    
+    saveJSON(db_path, db);
+
+    return res.status(204).json({});
 });
 
 // RUN SERVER
